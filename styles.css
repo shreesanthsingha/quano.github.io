@@ -4,7 +4,7 @@ body {
 
 .hero-header{
     height: 70vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-cover.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-cover.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
