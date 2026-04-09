@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Quano</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="code.html">Code and future Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="socials.html">Connect with me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-5">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Projects</h1>
+                <p class="lead text-muted">A selection of my current work and upcoming ideas</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Project Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <img src="images/Portfolio.png" class="card-img-top" alt="Portfolio">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Portfolio</h5>
+                            <p class="card-text text-muted">
+                                A responsive personal portfolio, focusing on clean UI and structured layout.
+                            </p>
+
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark border">HTML</span>
+                                <span class="badge bg-light text-dark border">CSS</span>
+                                <span class="badge bg-light text-dark border">Bootstrap</span>
+                            </div>
+
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="#" class="btn btn-outline-dark">Live</a>
+                                <a href="#" class="btn btn-outline-dark">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 project-card">
+                        <img src="images/Final project.png" class="card-img-top" alt="SwaMark Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">SwaMark (Upcoming)</h5>
+                            <p class="card-text text-muted">
+                                A planned online marketplace aimed at empowering MSMEs with better digital reach and accessibility.
+                            </p>
+
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark border">Python</span>
+                                <span class="badge bg-light text-dark border">Flask</span>
+                                <span class="badge bg-light text-dark border">Web Dev</span>
+                            </div>
+
+                            <div class="mt-auto">
+                                <button class="btn btn-outline-dark" onclick="status('SwaMark')">Status</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            function status(project) {
+                alert("Visit my GitHub to see the project: " + project);
+            }
+        </script>
+
+    </body>
+</html>
